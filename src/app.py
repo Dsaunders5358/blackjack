@@ -46,5 +46,5 @@ def deal_two_cards_with_value():
         print(f"Card Value = {card_value - 20} or {card_value - 10}")
     else:
         print(f"Card Value = {card_value}")
-
+#test
 deal_two_cards_with_value()
