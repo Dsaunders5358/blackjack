@@ -33,7 +33,6 @@ def deal_two_cards_with_value():
     card_one = generate_card()
     card_two = generate_card()
     while card_two == card_one:
-        print("rerolling")
         card_two = generate_card()
     card_value = check_card_value(card_one) + check_card_value(card_two)
     hand =f"| {card_one} | {card_two} |"
@@ -46,5 +45,8 @@ def deal_two_cards_with_value():
         print(f"Card Value = {card_value - 20} or {card_value - 10}")
     else:
         print(f"Card Value = {card_value}")
-#test
+    return card_value
+def deal_new_card(hand):
+    new_card = generate_card()
+    
 deal_two_cards_with_value()
